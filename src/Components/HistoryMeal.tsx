@@ -2,6 +2,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import HMTable from "./HMTable";
 
 export default function HistoryMeal(){
+    
     return(
         <Box sx={{
             width: 800,
@@ -25,7 +26,7 @@ export default function HistoryMeal(){
             }}>
             
                 <Typography align="center" paddingBottom={2} sx={{fontFamily: 'Russo One', fontSize: 20}}>
-                    12.12.12
+                    12.12.12 /сделать выбор даты
                 </Typography>
 
                 <Grid container sx={{
@@ -53,29 +54,6 @@ export default function HistoryMeal(){
                 </Grid>
 
                 <HMTable></HMTable>
-
-                <Grid container>
-                    <Grid item xs={8}>
-                        <p style={{ fontFamily: 'Russo One', color: '#8F2323', fontSize: 20, marginLeft: 5}}>Сегодня вы выполнили норму!</p>
-                    </Grid>
-                    <Grid item xs={4} sx={{
-                    }}>
-                        <Button variant="contained" sx={{
-                             width: 250,
-                             backgroundColor: '#902B2B', 
-                             fontFamily: 'Russo One',
-                             fontSize: 20,
-                             textTransform: 'capitalize',
-                             "&:hover": { backgroundColor: "#902B2B", },
-                             marginTop: 1,
-                             borderRadius: 2,
-                        }}>
-                            Добавить
-                        </Button>
-                    </Grid>
-
-                </Grid>
-
             </Box>
 
         
